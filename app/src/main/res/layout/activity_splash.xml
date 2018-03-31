@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splashRl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ahad.splashproject.MainActivity"
+    android:background="#333"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/balls_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <FrameLayout
+            android:id="@+id/splash_ball1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/splash_ball_bg"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/splash_ball2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/splash_ball1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/splash_ball_bg"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/splash_ball3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/splash_ball2"
+            android:layout_marginLeft="85dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/splash_ball_bg"></FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/splash_ball4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/splash_ball3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/splash_ball_bg"></FrameLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/splash_app_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/balls_cont"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="KRYPTO"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/progress_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splash_app_name"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="FETCHING DATA"
+        android:textColor="#fff"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
